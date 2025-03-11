@@ -1,0 +1,253 @@
+.cases-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  font-family: 'Lora', serif;
+  color: #2c3e50;
+  background: linear-gradient(to right, #f0f4ff, #dde6ff);
+  min-height: 100vh;
+}
+
+/* Header Section */
+.cases-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+
+h1 {
+  font-size: 2.7rem;
+  color: #0a3d62;
+  font-weight: bold;
+  flex: 1;
+  text-align: center;
+}
+
+/* Home Button */
+.home-button {
+  background: linear-gradient(to right, #007bff, #0056b3);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+.home-button:hover {
+  background: linear-gradient(to right, #0056b3, #003f8c);
+  transform: scale(1.05);
+}
+
+/* Insert Case Section */
+.insert-case {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+  width: 90%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.insert-case h2 {
+  font-size: 1.8rem;
+  color: #0a3d62;
+  margin-bottom: 15px;
+}
+
+/* Form Grid */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.insert-case input, .insert-case select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: 'Lora', serif;
+}
+
+.insert-button {
+  background: linear-gradient(to right, #28a745, #218838);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 15px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.insert-button:hover {
+  background: linear-gradient(to right, #218838, #1e7e34);
+  transform: scale(1.05);
+}
+
+/* Cases Table */
+.cases-table-container {
+  width: 90%;
+  max-width: 1200px;
+  overflow-x: auto;
+}
+
+.cases-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cases-table th, .cases-table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.cases-table th {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white;
+  text-transform: uppercase;
+}
+
+.cases-table tr:nth-child(even) {
+  background: #f8f9fd;
+}
+
+.cases-table tr:hover {
+  background: #e0e5ec;
+  transition: background 0.3s;
+}
+
+/* Status Colors */
+.status-in-desfasurare {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.status-finalizat {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.status-anulat {
+  color: #d9534f;
+  font-weight: bold;
+}
+
+/* Delete & Update Buttons */
+.delete-button {
+  background: linear-gradient(to right, #dc3545, #c82333);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.delete-button:hover {
+  background: linear-gradient(to right, #c82333, #bd2130);
+  transform: scale(1.05);
+}
+
+.update-button {
+  background: linear-gradient(to right, #ffc107, #e0a800);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s, transform 0.2s;
+  margin-left: 8px;
+}
+
+.update-button:hover {
+  background: linear-gradient(to right, #e0a800, #c69500);
+  transform: scale(1.05);
+}
+
+/* Update Form */
+.update-form {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.update-form h2 {
+  font-size: 1.5rem;
+  color: #0a3d62;
+  margin-bottom: 10px;
+}
+
+.update-form select, .update-form input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: 'Lora', serif;
+}
+
+.save-button {
+  background: linear-gradient(to right, #17a2b8, #138496);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.save-button:hover {
+  background: linear-gradient(to right, #138496, #117a8b);
+  transform: scale(1.05);
+}
+
+/* Messages */
+.loading-message, .error-message, .no-cases-message {
+  font-size: 1.2rem;
+  color: #1e3c72;
+  margin-top: 20px;
+}
+
+.error-message {
+  color: #d9534f;
+}
+
+.success-message {
+  font-size: 1.2rem;
+  color: #28a745;
+  font-weight: bold;
+  margin-top: 15px;
+}
